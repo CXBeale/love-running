@@ -23,6 +23,10 @@ header {
     padding: 15px; /* Some padding */
     text-align: center; /* Centered text */
     }
+
+h1 {
+    font-family: 'Oswald', sans-serif; /* Oswald font for headings */
+}
 /* Main */
 main {
     background-color: olive; /* Olive background */
