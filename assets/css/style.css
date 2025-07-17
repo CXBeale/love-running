@@ -1,4 +1,6 @@
-/* CSS file for styling the webpage */
+/*Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200..700&display=swap');
+
 /* wildcard selector to overide browser default settings*/
 * {
     margin: 0; /* Remove default margin */
@@ -11,9 +13,9 @@ body {
     min-height: 100vh; /* Full height of the viewport */
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    font-family: 'Arial', sans-serif; /* Default font for the body */
+    font-family: 'Lato', sans-serif; /* Default font for the body */
     color: #3a3a3a; /* Default text color */
-
+}
 /* Header */
 header {
     background-color: #053107; /* Green background */
@@ -26,7 +28,6 @@ main {
     background-color: olive; /* Olive background */
     color: black; /* Black text */
     padding: 20px; /* Padding around the main content */
-    font-family: Arial, sans-serif; /* Font style for main content */
     flex: 1 0 auto; /* Allow main to grow and fill available space */
 }
 /* Footer */
