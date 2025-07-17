@@ -18,10 +18,15 @@ body {
 }
 /* Header */
 header {
-    background-color: #053107; /* Green background */
+    background-color: #ffffff; /* white background */
     color: white; /* White text */
     padding: 15px; /* Some padding */
-    text-align: left; /* Centered text */
+    text-align: left; /* left  text */
+    position:fixed
+    z-index: 1000; /* Ensure header is above other content */
+    width: 100%; /* Full width */
+    box-shadow: 0 5px 4px #3a3a3a; /* Subtle shadow for depth */
+
     }
 
 h1 {
