@@ -19,7 +19,7 @@ body {
 /* Header */
 header {
     background-color: #ffffff; /* white background */
-    color: white; /* White text */
+    color: inherit; /* White text */
     padding: 15px; /* Some padding */
     text-align: left; /* left  text */
     position:fixed
@@ -29,8 +29,16 @@ header {
 
     }
 
+header a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Link color */
+}
+
 h1 {
     font-family: 'Oswald', sans-serif; /* Oswald font for headings */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Spacing between letters */
+    color: #252525; /* Dark color for headings */
 }
 /* Main */
 main {
