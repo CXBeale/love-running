@@ -22,12 +22,11 @@ header {
     color: inherit; /* White text */
     padding: 15px; /* Some padding */
     text-align: left; /* left  text */
-    position:fixed
-    z-index: 1000; /* Ensure header is above other content */
+    position: fixed;
     width: 100%; /* Full width */
     box-shadow: 0 5px 4px #3a3a3a; /* Subtle shadow for depth */
-
-    }
+    z-index: 1000; /* Ensure header is above other content */
+}
 
 header a {
     text-decoration: none; /* Remove underline from links */
@@ -40,6 +39,23 @@ h1 {
     letter-spacing: 2px; /* Spacing between letters */
     color: #252525; /* Dark color for headings */
 }
+
+#menu {
+    font-size: 110%; /* Slightly larger font size for menu */
+    letter-spacing: 4px; /* Increased letter spacing for menu items */
+    text-transform: uppercase; /* Uppercase text for menu */
+    list-style-type: none; /* Remove default list style */
+}
+
+#menu > li {
+    margin-bottom: 1em; /* Space between menu items */
+    margin-top: 1em; /* Space between menu items */
+}
+
+.active {
+    border-bottom: 2px solid #3a3a3a; /* Underline for active menu item */
+}
+
 /* Main */
 main {
     background-color: olive; /* Olive background */
@@ -47,6 +63,7 @@ main {
     padding: 20px; /* Padding around the main content */
     flex: 1 0 auto; /* Allow main to grow and fill available space */
 }
+
 /* Footer */
 footer {
     background-color: #333; /* Dark background */
