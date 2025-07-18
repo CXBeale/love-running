@@ -1,103 +1,128 @@
 /*Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200..700&display=swap");
 
 /* wildcard selector to overide browser default settings*/
 * {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* General Styles */
 body {
-    min-height: 100vh; /* Full height of the viewport */
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    font-family: 'Lato', sans-serif; /* Default font for the body */
-    color: #3a3a3a; /* Default text color */
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  font-family: "Lato", sans-serif; /* Default font for the body */
+  color: #3a3a3a; /* Default text color */
 }
 /* Header */
 header {
-    background-color: #ffffff; /* white background */
-    position: fixed;
-    width: 100%; /* Full width */
-    box-shadow: 0 5px 4px #3a3a3a; /* Subtle shadow for depth */
-    z-index: 1000; /* Ensure header is above other content */
-    padding: 0 1em; /* Padding on the left */
-    display: flex; /* Flexbox for layout */
-    justify-content: space-between; /* Space between items */
-    align-items: baseline; /* Align items to the baseline */
+  background-color: #ffffff; /* white background */
+  position: fixed;
+  width: 100%; /* Full width */
+  box-shadow: 0 5px 4px #3a3a3a; /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure header is above other content */
+  padding: 0 1em; /* Padding on the left */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: baseline; /* Align items to the baseline */
 }
 
 header a {
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Link color */
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif; /* Oswald font for headings */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 2px; /* Spacing between letters */
-    color: #252525; /* Dark color for headings */
+  font-family: "Oswald", sans-serif; /* Oswald font for headings */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Spacing between letters */
+  color: #252525; /* Dark color for headings */
 }
 
 #menu {
-    font-size: 110%; /* Slightly larger font size for menu */
-    letter-spacing: 4px; /* Increased letter spacing for menu items */
-    text-transform: uppercase; /* Uppercase text for menu */
-    list-style-type: none; /* Remove default list style */
+  font-size: 110%; /* Slightly larger font size for menu */
+  letter-spacing: 4px; /* Increased letter spacing for menu items */
+  text-transform: uppercase; /* Uppercase text for menu */
+  list-style-type: none; /* Remove default list style */
 }
 
 #menu > li {
-    margin-bottom: 1em; /* Space between menu items */
-    margin-top: 1em; /* Space between menu items */
+  margin-bottom: 1em; /* Space between menu items */
+  margin-top: 1em; /* Space between menu items */
 }
 
 .active {
-    border-bottom: 2px solid #3a3a3a; /* Underline for active menu item */
+  border-bottom: 2px solid #3a3a3a; /* Underline for active menu item */
 }
 
 nav {
-    position: absolute; /* Positioning the nav */
-    background-color: #ffffff; /* White background for nav */
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    box-shadow: 0 5px 4px #3a3a3a; /* Subtle shadow for depth */
-    padding: 0 1rem; /* Padding for nav */
-    display: none; /* Hide by default */
-    top: 100%; /* position below header by starting 100% the way down the parent element*/
+  position: absolute; /* Positioning the nav */
+  background-color: #ffffff; /* White background for nav */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  box-shadow: 0 5px 4px #3a3a3a; /* Subtle shadow for depth */
+  padding: 0 1rem; /* Padding for nav */
+  display: none; /* Hide by default */
+  top: 100%; /* position below header by starting 100% the way down the parent element*/
 }
 
 /* Nav-Toggle */
-#nav-toggle:checked~nav {
-    display: block; /* Show nav when toggle is checked */
+#nav-toggle:checked ~ nav {
+  display: block; /* Show nav when toggle is checked */
 }
 
-/* Nav-Toggle */ 
+/* Nav-Toggle */
 #nav-toggle {
-    display: none; /* Hide the checkbox */
+  display: none; /* Hide the checkbox */
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Main */
 main {
-    background-color: olive; /* Olive background */
-    color: black; /* Black text */
-    /*padding: 20px;  Padding around the main content */
-    flex: 1 0 auto; /* Allow main to grow and fill available space */
-    margin-top: 47px;
+  background-color: olive; /* Olive background */
+  color: black; /* Black text */
+  /*padding: 20px;  Padding around the main content */
+  flex: 1 0 auto; /* Allow main to grow and fill available space */
+  margin-top: 47px;
 }
 
 /* Footer */
 footer {
-    background-color: #333; /* Dark background */
-    color: white; /* White text */
-    text-align: center; /* Centered text */
-    padding: 10px; /* Padding for footer */
-    position: fixed; /* Fixed position at the bottom */
-    width: 100%; /* Full width */
-    bottom: 0; /* Align to the bottom */
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+  text-align: center; /* Centered text */
+  padding: 10px; /* Padding for footer */
+  position: fixed; /* Fixed position at the bottom */
+  width: 100%; /* Full width */
+  bottom: 0; /* Align to the bottom */
+}
+
+/* media queries */
+/* Tablet and larger screens */
+@media screen and (min-width: 768px) {
+  /* Header */
+  nav {
+    display: block; /* Show nav on larger screens */
+    position: relative; /* Relative positioning */
+    box-shadow: none; /* Remove shadow on larger screens */
+    width: fit-content; /* Fit content width */
+    padding-right: 1rem; /* Padding on the right */
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu > li {
+    padding-left: 1em; /* Space between menu items */
+  }
+
+  .nav-toggle-label {
+    display: none; /* Hide nav toggle label on larger screens */
+  }
 }
