@@ -86,8 +86,9 @@ nav {
 main {
     background-color: olive; /* Olive background */
     color: black; /* Black text */
-    padding: 20px; /* Padding around the main content */
+    /*padding: 20px;  Padding around the main content */
     flex: 1 0 auto; /* Allow main to grow and fill available space */
+    margin-top: 47px;
 }
 
 /* Footer */
