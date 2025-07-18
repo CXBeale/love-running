@@ -19,13 +19,14 @@ body {
 /* Header */
 header {
     background-color: #ffffff; /* white background */
-    color: inherit; /* White text */
-    text-align: left; /* left  text */
     position: fixed;
     width: 100%; /* Full width */
     box-shadow: 0 5px 4px #3a3a3a; /* Subtle shadow for depth */
     z-index: 1000; /* Ensure header is above other content */
-    padding: 1em; /* Padding on the left */
+    padding: 0 1em; /* Padding on the left */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: baseline; /* Align items to the baseline */
 }
 
 header a {
@@ -64,6 +65,21 @@ nav {
     box-shadow: 0 5px 4px #3a3a3a; /* Subtle shadow for depth */
     padding: 0 1rem; /* Padding for nav */
     display: none; /* Hide by default */
+    top: 100%; /* position below header by starting 100% the way down the parent element*/
+}
+
+/* Nav-Toggle */
+#nav-toggle:checked~nav {
+    display: block; /* Show nav when toggle is checked */
+}
+
+/* Nav-Toggle */ 
+#nav-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main */
