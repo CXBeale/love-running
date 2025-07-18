@@ -93,10 +93,8 @@ main {
 
 /* Footer */
 footer {
-  background-color: #333; /* Dark background */
+  background-color: #707070; /* Dark background */
   color: white; /* White text */
-  text-align: center; /* Centered text */
-  padding: 10px; /* Padding for footer */
   position: fixed; /* Fixed position at the bottom */
   width: 100%; /* Full width */
   bottom: 0; /* Align to the bottom */
