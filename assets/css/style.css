@@ -92,12 +92,19 @@ main {
 }
 
 /* Footer */
-footer {
-  background-color: #707070; /* Dark background */
-  color: white; /* White text */
-  position: fixed; /* Fixed position at the bottom */
-  width: 100%; /* Full width */
-  bottom: 0; /* Align to the bottom */
+#social-networks {
+text-align: center;
+padding: 20px 0; /* Padding around the footer */
+display: flex; /* Flexbox for layout */
+justify-content: space-evenly;
+list-style-type: none; /* Remove default list style */
+
+}
+
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a; /* Icon color */
 }
 
 /* media queries */
