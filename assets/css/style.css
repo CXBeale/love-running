@@ -16,6 +16,14 @@ body {
   font-family: "Lato", sans-serif; /* Default font for the body */
   color: #3a3a3a; /* Default text color */
 }
+
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif; /* Oswald font for headings */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Spacing between letters */
+  color: #252525; /* Dark color for headings */
+}
+
 /* Header */
 header {
   background-color: #ffffff; /* white background */
@@ -32,13 +40,6 @@ header {
 header a {
   text-decoration: none; /* Remove underline from links */
   color: inherit; /* Link color */
-}
-
-h1 {
-  font-family: "Oswald", sans-serif; /* Oswald font for headings */
-  text-transform: uppercase; /* Uppercase text */
-  letter-spacing: 2px; /* Spacing between letters */
-  color: #252525; /* Dark color for headings */
 }
 
 #menu {
@@ -93,9 +94,24 @@ main {
   height: 600px;
   width: 100%;
   background: url("../images/hero-image.webp") no-repeat center center/cover;
-   
+  position: relative;
 }
 
+#cover-text {
+  background-color: rgba(241, 109, 107, 0.7); /* Semi-transparent background */
+  font-size: 130%; /* Font size for cover text */
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 100px; /* Minimum height for cover text */
+  padding-top: 40px; /* Padding on top */
+  padding-left: 10px; /* Padding on left */
+}
+
+#cover-text > h2, #cover-text > h3 {
+  color: #ffffff; /* White text color for cover text */
+}
+ 
 
 /* Footer */
 #social-networks {
@@ -104,7 +120,6 @@ padding: 20px 0; /* Padding around the footer */
 display: flex; /* Flexbox for layout */
 justify-content: space-evenly;
 list-style-type: none; /* Remove default list style */
-
 }
 
 #social-networks i {
@@ -148,10 +163,17 @@ list-style-type: none; /* Remove default list style */
     margin-top: 79px; /* Remove top margin on larger screens */
   }
 
+/*Hero Section */
+  
+  #cover-text {
+    width: 300px; /* Adjust width for cover text */
+    right: 50px; /* Position cover text to the right */
+  }
+
+}
+
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a; /* Underline on hover */
     }
-}
-
 }
