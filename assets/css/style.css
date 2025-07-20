@@ -156,6 +156,29 @@ hr {
   align-items: center; /* Center align the image vertically */
 }
 
+/* meet-up times */
+#times {
+  display: flex; /* Flexbox for layout */
+  background: url("../images/dublin-city.webp") no-repeat center/cover; /* Background image */
+  flex-wrap: wrap;
+}
+
+#times div {
+  color: #fafafa; /* Text color for times */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px; /* Padding for times */
+  text-align: center; /* Center align text */
+  /* tHIS WILL STOP divs wrapping on screens less than 400px wide*/
+  /*&each div will wrap on the row to fill row*/
+  flex-basis: 200px; /* Minimum width for each time block */
+  flex-grow: 1; /* Allow items to grow */
+  border: 2px solid white;
+}
+
+#times h3{
+  color: #fafafa; /* Text color for times */
+}
+
 /* Footer */
 #social-networks {
 text-align: center;
