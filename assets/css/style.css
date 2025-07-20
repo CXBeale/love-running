@@ -139,6 +139,23 @@ hr {
   margin: 5px 0; /* Space above and below the rule */
 }
 
+/* center image */
+#circle-cover-bg {
+  background: url("../images/reasons-image.webp") no-repeat top center/cover;
+  width: 90vw;
+  height: 90vw; /* Square aspect ratio */
+  margin bottom: 20px; /* Space below the image */
+  border-radius: 50%; /* Circular shape */
+  max-width: 300px; /* Maximum width for the image */
+  max-height: 300px; /* Maximum height for the image */
+}
+
+#benefits-image {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center align the image */
+  align-items: center; /* Center align the image vertically */
+}
+
 /* Footer */
 #social-networks {
 text-align: center;
