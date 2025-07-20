@@ -208,6 +208,14 @@ list-style-type: none; /* Remove default list style */
   color: #3a3a3a; /* Icon color */
 }
 
+/*media queries large or landscape mobile devices* 576px and up*/
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 /* media queries */
 /* Tablet screens above 768px */
 @media screen and (min-width: 768px) {
@@ -265,13 +273,20 @@ list-style-type: none; /* Remove default list style */
     align-self: flex-end; /* Align item to the end */
   }
 
+  #photos {
+    column-count: 3;
+  }
 }
 
 /* Desktop screens above 992px */
 @media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a; /* Underline on hover */
-    }
+  #menu a:hover {
+    border-bottom: 1px solid #3a3a3a; /* Underline on hover */
+  }
+
+   #photos {
+    column-count: 4;
+  }
 }
 
 /*Desktops above 1200px */
