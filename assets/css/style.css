@@ -183,6 +183,16 @@ hr {
   color: #fafafa; /* Text color for times */
 }
 
+/*Gallery Page*/
+#photos img {
+  width: 100%;
+  line-height: 1em; /*alt text in broken image will be visible for any particular image*/
+}
+
+#photos {
+  line-height: 0;
+}
+
 /* Footer */
 #social-networks {
 text-align: center;
