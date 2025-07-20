@@ -144,7 +144,7 @@ hr {
   background: url("../images/reasons-image.webp") no-repeat top center/cover;
   width: 90vw;
   height: 90vw; /* Square aspect ratio */
-  margin bottom: 20px; /* Space below the image */
+  margin-bottom: 20px; /* Space below the image */
   border-radius: 50%; /* Circular shape */
   max-width: 300px; /* Maximum width for the image */
   max-height: 300px; /* Maximum height for the image */
@@ -172,7 +172,7 @@ list-style-type: none; /* Remove default list style */
 }
 
 /* media queries */
-/* Tablet and larger screens */
+/* Tablet screens above 768px */
 @media screen and (min-width: 768px) {
   /* Header */
   nav {
@@ -206,17 +206,64 @@ list-style-type: none; /* Remove default list style */
     margin-top: 79px; /* Remove top margin on larger screens */
   }
 
-/*Hero Section */
-  
+  /*Hero Section */
   #cover-text {
     width: 300px; /* Adjust width for cover text */
     right: 50px; /* Position cover text to the right */
   }
 
+  /* Reasons Section */
+  #benefits-physical, #benefits-mental {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width */
+  }
+
+  #benefits-physical > div, #benefits-mental > div {
+    width: 75%; /* Full width */
+  }
+
+  #benefits-mental > div {
+    text-align: end; /* Align text to the end */
+    align-self: flex-end; /* Align item to the end */
+  }
+
 }
 
+/* Desktop screens above 992px */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a; /* Underline on hover */
     }
+}
+
+/*Desktops above 1200px */
+@media screen and (min-width: 1200px) {
+
+  #benefits {
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Stack items horizontally */
+    justify-content: space-between;
+  }
+  
+  #benefits > div {
+    flex: 1; /* Allow items to grow equally */
+  }
+
+  #benefits-image {
+   order: 0; /* Ensure image is first */
+  }
+
+  #benefits-mental {
+   order: 1; /* Ensure mental benefits are second */
+  }
+
+  #benefits-mental > div {
+    align-self: flex-start; 
+  }
+
+  #benefits-physical > div {
+    align-self: flex-end; 
+  }
+ 
 }
